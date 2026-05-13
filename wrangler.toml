@@ -1,0 +1,5 @@
+# Cloudflare Pages configuration for Flow Assistant.
+# This keeps the Pages build rooted at the repository root and publishes Vite's dist/ output.
+name = "flow-assistant"
+compatibility_date = "2026-05-13"
+pages_build_output_dir = "dist"
