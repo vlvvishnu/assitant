@@ -1,0 +1,7 @@
+# Keep the generated service worker fresh so Android share-target updates roll out quickly.
+/sw.js
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# Cache static build assets aggressively; Vite fingerprints production assets.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
