@@ -71,3 +71,5 @@ Use these Pages settings:
 - **Node version:** 20 or newer
 
 If a Cloudflare build log says `Could not read package.json` and shows `HEAD is now at 1ca470f Initialize repository`, the deployment is building the initial/base commit instead of the branch that contains this app. Reconnect the Pages project to the PR branch or merge this branch before deploying.
+
+The repo also includes `public/_redirects` for React Router fallback routes like `/share` and `public/_headers` so the generated service worker is not cached too aggressively during Android share-target updates. See `DEPLOYMENT.md` for the deployment checklist.
